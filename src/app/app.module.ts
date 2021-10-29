@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CardExpPipe } from './pipes/card-exp.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardExpPipe
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    CardExpPipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
